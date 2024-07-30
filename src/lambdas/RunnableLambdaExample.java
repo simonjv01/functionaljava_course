@@ -22,5 +22,8 @@ public class RunnableLambdaExample {
         Runnable runnable1 = () -> System.out.println("Inside Runnable 2");
         new Thread(runnable1).start();
 
+        new Thread(()-> System.out.println("Inside Runnable 3")).start();
+
+
     }
 }
